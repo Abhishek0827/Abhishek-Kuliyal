@@ -26,7 +26,7 @@ body {
 
   background-size: 44px 44px;
 }
-body  main > section {
+body main > section {
   margin: auto;
   width: 80%;
 }
@@ -581,11 +581,12 @@ header #left h1 {
   color: var(--orange);
   margin-right: 10px;
 }
-.external-icon{  margin-left: 8px;}
+.external-icon {
+  margin-left: 8px;
+}
 .external-icon path {
   color: #ffffff;
   font-size: 10px;
-
 }
 footer {
   padding: 30px 0px;
@@ -673,6 +674,9 @@ footer span {
     width: 95%;
     gap: 20px;
   }
+  #sixth > .container > .left {
+    width: 100%;
+  }
   #sixth > .container > .left > h2,
   #sixth > .container > .left > h2 > span {
     font-size: 50px;
@@ -680,8 +684,16 @@ footer span {
   }
   #sixth > .container > .left > a {
     margin-top: 0px;
+    justify-self: end;
+    flex-direction: row-reverse;
+    /* border: none; */
   }
-  footer{
+  #sixth > .container > .right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  footer {
     padding: 15px 0px;
   }
 }
